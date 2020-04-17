@@ -1,6 +1,7 @@
 from flask import Flask
+from config import Config
 
-# appena viene eseguito un modulo "__name__" prende il nome del modulo stesso
 app = Flask(__name__)
+app.config.from_object(Config)
 
 from app import routes
