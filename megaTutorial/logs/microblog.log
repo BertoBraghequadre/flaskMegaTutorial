@@ -81,3 +81,5 @@ Traceback (most recent call last):
   File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\models.py", line 67, in get_reset_password_token
     app.config['SECRET_KEY'], algorithm='HS256').decode('utf-8')
 NameError: name 'app' is not defined
+2020-04-19 16:18:17,873 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:48]
+2020-04-19 16:19:41,226 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:48]
