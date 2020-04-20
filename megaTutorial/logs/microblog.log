@@ -104,3 +104,6 @@ Traceback (most recent call last):
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\redis\connection.py", line 557, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 10061 connecting to None:6379. Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione.
+2020-04-20 17:56:15,723 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:89]
+2020-04-20 17:56:24,493 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:89]
+2020-04-20 17:59:26,333 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:89]
