@@ -1,0 +1,109 @@
+2020-04-20 17:05:38,430 ERROR: Exception on /explore [GET] [in c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\main\routes.py", line 61, in explore
+    return render_template('index.html', title=_('Explore'),
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\templates\base.html", line 2, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 26, in block "body"
+    {% block scripts %}
+  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\templates\base.html", line 137, in block "scripts"
+    $.ajax('{{ url_for('main.notifications') }}?since=' + since).done(
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main.notifications'. Did you mean 'main.unfollow' instead?
+2020-04-20 17:09:08,644 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:78]
+2020-04-20 17:09:16,071 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:78]
+2020-04-20 17:12:33,898 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:78]
+2020-04-20 17:13:06,067 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:78]
+2020-04-20 17:26:18,829 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:78]
+2020-04-20 17:26:27,122 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:78]
+2020-04-20 17:32:27,286 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:86]
+2020-04-20 17:32:39,060 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:86]
+2020-04-20 17:32:48,553 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:86]
+2020-04-20 17:33:31,311 ERROR: Exception on /export_posts [GET] [in c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\redis\connection.py", line 552, in connect
+    sock = self._connect()
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\redis\connection.py", line 609, in _connect
+    raise err
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\redis\connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\main\routes.py", line 201, in export_posts
+    current_user.launch_task('export_posts', _('Exporting posts...'))
+  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\models.py", line 149, in launch_task
+    rq_job = current_app.task_queue.enqueue('app.tasks.' + name, self.id,
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\rq\queue.py", line 381, in enqueue
+    return self.enqueue_call(
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\rq\queue.py", line 329, in enqueue_call
+    job = self.enqueue_job(job, at_front=at_front)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\rq\queue.py", line 435, in enqueue_job
+    pipe.execute()
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\redis\client.py", line 3960, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\redis\connection.py", line 1185, in get_connection
+    connection.connect()
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\redis\connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to None:6379. Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione.
+2020-04-20 17:56:15,723 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:89]
+2020-04-20 17:56:24,493 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:89]
+2020-04-20 17:59:26,333 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:89]
