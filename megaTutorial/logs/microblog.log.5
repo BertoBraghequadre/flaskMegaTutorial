@@ -1,4 +1,8 @@
-2020-04-18 19:27:56,981 ERROR: Exception on /login [GET] [in c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
+2020-04-18 18:26:14,489 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:43]
+2020-04-18 18:26:27,447 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:43]
+2020-04-18 18:34:51,622 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:43]
+2020-04-18 19:01:02,349 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:43]
+2020-04-18 19:01:03,856 ERROR: Exception on /login [GET] [in c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -12,7 +16,7 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\routes.py", line 42, in login
+  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\routes.py", line 50, in login
     return render_template('login.html', title='Sign In', form=form)
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
     return _render(
@@ -39,33 +43,22 @@ Traceback (most recent call last):
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\werkzeug\routing.py", line 2179, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'explore'. Did you mean 'edit_profile' instead?
-2020-04-18 19:28:01,835 ERROR: Exception on /explore [GET] [in c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1926, in dispatch_request
-    self.raise_routing_exception(req)
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1908, in raise_routing_exception
-    raise request.routing_exception
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\ctx.py", line 350, in match_request
-    result = self.url_adapter.match(return_rule=True)
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\werkzeug\routing.py", line 1945, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-
-During handling of the above exception, another exception occurred:
-
+2020-04-18 19:01:17,528 ERROR: Exception on /login [GET] [in c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1816, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1744, in handle_http_exception
-    return handler(e)
-  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\errors.py", line 6, in not_found_error
-    return render_template('404.html'), 404
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\routes.py", line 50, in login
+    return render_template('login.html', title='Sign In', form=form)
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\templating.py", line 137, in render_template
     return _render(
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\templating.py", line 120, in _render
@@ -76,7 +69,7 @@ Traceback (most recent call last):
     reraise(*rewrite_traceback_stack(source=source))
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\jinja2\_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
-  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\templates\404.html", line 1, in top-level template code
+  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\templates\login.html", line 1, in top-level template code
     {% extends "base.html" %}
   File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\templates\base.html", line 15, in top-level template code
     <a href="{{ url_for('explore') }}">Explore</a>
@@ -91,23 +84,4 @@ Traceback (most recent call last):
   File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\werkzeug\routing.py", line 2179, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'explore'. Did you mean 'edit_profile' instead?
-2020-04-18 19:35:25,331 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:43]
-2020-04-18 19:37:02,620 ERROR: Exception on /index [POST] [in c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "c:\users\gaeta\appdata\local\programs\python\python38-32\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\routes.py", line 20, in index
-    db.session.add(post)
-NameError: name 'post' is not defined
+2020-04-18 19:14:11,186 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:43]
