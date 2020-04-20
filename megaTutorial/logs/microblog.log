@@ -17,3 +17,5 @@ Traceback (most recent call last):
   File "C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\main\routes.py", line 144, in search
     posts, total = Post.search(g.search_form.q.data, page,
 AttributeError: type object 'Post' has no attribute 'search'
+2020-04-20 10:48:09,710 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:78]
+2020-04-20 11:01:43,001 INFO: Microblog startup [in C:\Users\gaeta\Desktop\Università\GitKraken\flaskMegaTutorial\megaTutorial\app\__init__.py:78]
